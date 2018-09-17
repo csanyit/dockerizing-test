@@ -7,7 +7,7 @@ env:
     - IMAGE_TAG=`date '+%Y%m%d%H%M%S'`
     - IMAGE_NAME="xray-test"
     - CI_USER="csanyit"
-    - CI_PASSWORD="ACS2f1a1cf3"
+    - secure: CiHbhOR2IYSPSTa3w4nMJCfRWLZbM7fwHJ5GLJo/FpbjONNSvLZekKZRAtM1/4tb/CKGhLQHVs0OmePKQNAWqSXdhLsUe6qxzIE78IK6mAZ1GdvWnbpplz6JQHSBWRkBDcc43bHiPXfky4psq3VxNwU9kZlIn/ldkPJXZ0N+klwNh7EHQc9pyvLGsT6fpvC/0H/l4V/V5upjEgmtGm5i9FU7H9ZfuWZeY7W8p5PweFYYZMh5uNi7XZ1C6ojRostJh9r7MGCSsLUhYBWZpBQ3jPd2xdk2sNOgU7WPy8mT/EMJ5/++/X4WiPFDSkI0+MCtD95na6fqABsCunpbZXgEcw==
 build:
   ci:
     - scripts/docker_build.sh
