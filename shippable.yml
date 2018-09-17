@@ -2,6 +2,11 @@ language: none
 env:
   global:
     - DEEP_LEARN_ENV="dev"
+    - REGISTRY_NAME="dockerizing-test"
+    - DATETIME=`date '+%Y%m%d%H%M%S'`
+    - IMAGE_TAG="xray-test:${DATETIME}"
+    - CI_USER="csanyit"
+    - CI_PASSWORD="ACS2f1a1cf3"
 build:
   ci:
     - scripts/docker_build.sh
