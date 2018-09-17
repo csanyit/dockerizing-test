@@ -6,4 +6,4 @@ build:
   ci:
     - scripts/docker_build.sh
   on_success:
-    - if [ "$IS_PULL_REQUEST" = false ] ; then scripts/ci_deploy.sh; fi
+    - if [ "$BRANCH" == "master" ] ; then scripts/ci_deploy.sh; fi
