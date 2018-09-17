@@ -2,9 +2,10 @@ language: none
 env:
   global:
     - DEEP_LEARN_ENV="dev"
+    - DOCKER_REPOSITORY_DOMAIN="repo.treescale.com"
     - REGISTRY_NAME="dockerizing-test"
-    - DATETIME=`date '+%Y%m%d%H%M%S'`
-    - IMAGE_TAG="xray-test:${DATETIME}"
+    - IMAGE_TAG=`date '+%Y%m%d%H%M%S'`
+    - IMAGE_NAME="xray-test:${IMAGE_TAG}"
     - CI_USER="csanyit"
     - CI_PASSWORD="ACS2f1a1cf3"
 build:
