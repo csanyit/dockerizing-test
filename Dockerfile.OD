@@ -1,0 +1,4 @@
+FROM tensorflow/tensorflow
+COPY ./Object_detection/ /Object_detection/
+ENV TESTING False
+CMD  python /Object_detection/main.py --testing $TESTING --data_dir /input_data/

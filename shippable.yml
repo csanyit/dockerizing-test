@@ -5,7 +5,9 @@ env:
     - DOCKER_REPOSITORY_DOMAIN="repo.treescale.com"
     - REGISTRY_NAME="dockerizing-test"
     - IMAGE_TAG=`date '+%Y%m%d%H%M%S'`
-    - IMAGE_NAME="xray-test"
+    - XRAY_CLASSIFIER_IMAGE_NAME="xray-classifier"
+    - MRI_CLASSIFIER_IMAGE_NAME="mri-classifier"
+    - OBJECT_DETECTION_IMAGE_NAME="object-detection"
     - CI_USER="csanyit"
     - secure: CiHbhOR2IYSPSTa3w4nMJCfRWLZbM7fwHJ5GLJo/FpbjONNSvLZekKZRAtM1/4tb/CKGhLQHVs0OmePKQNAWqSXdhLsUe6qxzIE78IK6mAZ1GdvWnbpplz6JQHSBWRkBDcc43bHiPXfky4psq3VxNwU9kZlIn/ldkPJXZ0N+klwNh7EHQc9pyvLGsT6fpvC/0H/l4V/V5upjEgmtGm5i9FU7H9ZfuWZeY7W8p5PweFYYZMh5uNi7XZ1C6ojRostJh9r7MGCSsLUhYBWZpBQ3jPd2xdk2sNOgU7WPy8mT/EMJ5/++/X4WiPFDSkI0+MCtD95na6fqABsCunpbZXgEcw==
 build:

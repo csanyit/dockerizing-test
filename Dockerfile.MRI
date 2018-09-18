@@ -1,0 +1,4 @@
+FROM tensorflow/tensorflow
+COPY ./MRI_classifier/ /MRI_classifier/
+ENV TESTING False
+CMD  python /MRI_classifier/main_3dMRI.py --testing $TESTING --data_dir /input_data/
